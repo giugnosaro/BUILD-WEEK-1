@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Epicode Exam - Feedback">
+    <link rel="stylesheet" href="./Welcome Page/css/Welcome-Style.css">
+    <title>Epicode Feedback</title>
+</head>
+<body>
+    <header id="headerFeedbackPage">
+      <div>
+        <a href="Welcome-Page.html"><img src="./Welcome Page/assets/epicode_logo.png" alt="epicode logo"></a>
+      </div>
+    </header>
+<main id="mainFeedbackPage">
+    <h1>Tell us how it's going</h1>
+    <p>From 0 to 10, how likely are you to recommend EPICODE
+        to a friend or a colleague?</p>
+        <div class="star-rating" data-rating="0">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="1" onclick="selectStar(1)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="2" onclick="selectStar(2)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="3" onclick="selectStar(3)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="4" onclick="selectStar(4)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="5" onclick="selectStar(5)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="6" onclick="selectStar(6)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="7" onclick="selectStar(7)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="8" onclick="selectStar(8)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="9" onclick="selectStar(9)">
+            <img src="./Welcome Page/assets/star.svg" alt="Stella vuota" class="star" data-index="10" onclick="selectStar(10)">
+        </div>
+    <p>Leave us an open feedback about your experience so far</p>
+    <div class="feedback-container">
+      <label for="feedback-input"></label>
+      <input type="text" id="feedback-input" class="feedback-input" placeholder="Write your comment here..." oninput="checkInputs()">
+    </div>
+    <script src="./Welcome Page/javascript/quiz.js"></script>
+    <button onclick="alert('Grazie del feedback &hearts;')" id="moreInfo" disabled>MORE INFO</button>
+</body>
+</html>

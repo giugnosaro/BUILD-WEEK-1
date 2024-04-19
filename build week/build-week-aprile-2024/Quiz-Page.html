@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" id="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Epicode Start Quiz ">
+    <link rel="stylesheet" href="./Welcome Page/css/Welcome-Style.css">
+    <title>Epicode Quiz</title>
+</head>
+<body id="'bodyQuizPage">
+    <header id="headerQuizPage">
+        <div>
+          <img src="./Welcome Page/assets/epicode_logo.png" alt="epicode logo">
+        </div>
+    </header>
+     <main id="mainQuizPage">
+        <div id="timer"></div>
+        <script src="./Welcome Page/javascript/clock.js"></script>     
+            <div id="app">
+                <div id="quiz">
+                    <h1></h1>
+                    <h2 id="Domanda">Domanda</h2>
+                    <div id="risposte">
+                        <button class="btn">Risposta 1</button>
+                        <button class="btn">Risposta 2</button>
+                        <button class="btn">Risposta 3</button>
+                        <button class="btn">Risposta 4</button>
+                    </div>    
+                </div>
+                <button id="next-btn">NEXT &nbsp;<code>&#8594;</code> 	</button>
+                <div id="myDiv"></div>
+            </div> 
+        <div id="contenitoreGrafico">
+                <div id="testoSinistra" class="testo-lato"></div>
+                <div id="testoSinistra2" class="testo-lato2"></div>
+            <div id="risultati">
+            <!-- Qui verranno visualizzati i risultati -->
+                <canvas id="graficoRisultati" width="450"></canvas>
+          </div>
+          <div id="testoDestra" class="testo-lato"></div>
+          <div id="testoDestra2" class="testo-lato2"></div>
+        </div>
+          <button onclick="mostraRisultati()" id="bottone_risultati">See Results</button>
+          <button id="feedback-btn" style="display: none;">Rate Us</button>
+    </main>
+    <script src="./Welcome Page/javascript/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
